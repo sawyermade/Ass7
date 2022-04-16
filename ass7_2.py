@@ -3,8 +3,10 @@ import csv
 # Customer Class
 class Customer:
     # Constructor with customer info
-    def __init__(self, cust_id, first_name, last_name, 
-                    company_name, address, city, state, zipcode):
+    def __init__(
+        self, cust_id, first_name, last_name, 
+        company_name, address, city, state, zipcode
+    ):
         # Set customer attributes/variables
         self.cust_id      = cust_id.strip()
         self.first_name   = first_name.strip()
