@@ -44,7 +44,6 @@ def find_customer_by_id(customers, cust_id):
     for cust in customers:
         if cust.cust_id == cust_id:
             return cust
-    return None
 
 # Main function
 def main():
