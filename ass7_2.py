@@ -37,7 +37,9 @@ class Customer:
 # Get customers from csv
 def get_customers():
     with open('customers.csv') as cf:
-        return [Customer(*cust) for cust in csv.reader(cf)][1:]
+        # return [Customer(*cust) for cust in csv.reader(cf)][1:]
+        return [Customer(*cust) for cust in list(csv.reader(cf))[1:]]
+
 
 # Find customer by ID
 def find_customer_by_id(customers, cust_id):
