@@ -30,7 +30,7 @@ class Customer:
         if self.company_name:
             address += f'{self.company_name}\n'
 
-        # Rest of address
+        # Rest of full address
         address += f'{self.address}\n'
         address += f'{self.city}, {self.state} {self.zip}'
 
