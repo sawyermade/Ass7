@@ -74,7 +74,7 @@ def main():
             print("No customer with that ID.\n")
         
         # Ask if user wants to continue
-        cont = input("Continue? (y/n): ").lower()
+        cont = input("Continue? (y/n): ").strip().lower()
         print()
 
         # If user wants to quit, end loop
